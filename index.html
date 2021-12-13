@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Canada Trivia</title>
+  </head>
+  <body>
+    
+    <header>
+      <button id="high-scores-btn">Score</button>
+      <h2 id="timer"></h2>
+    </header>
+  
+  <div class="intro-container" id="intro">
+  <div class="start-quiz">
+    <h1>Canada Quiz!</h1>
+    <p>How much do you know about Canada with this timed quiz.</p> 
+      <p>Try to beat the timer but be careful...each incorrect answer will deduct 5 seconds from
+        the timer!</p>
+      <p>Click the Start button below to begin!</p>
+  </div>
+    <button id="start-btn" class="btn">Start the Quiz!</button>
+</div>
+
+    <div class="quiz-container" id="quiz" style="display: none;">
+      <div class="quiz-questions">
+        <h2 id="question">Question Goes Here</h2>
+        <ul>
+          <li>
+            <button class="answer" id="a">
+          </li>
+
+          <li>
+            <button class="answer" id="b">
+          </li>
+
+          <li>
+            <button class="answer" id="c">
+          </li>
+
+          <li>
+            <button class="answer" id="d">
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+
+    <div class="results-container" id="results" style="display: none;">
+      <h2 id="correct-answers"></h2>
+      <div id="initials"></div>
+      <button id="submit-high-score-btn" onClick="submitHighScore()">Submit</button>
+    </div>
+
+    <div class="high-score-container" id="scores" style="display: none;">
+      <div class="score-list">
+        <h1>High Scores</h1>
+        <ul>
+          <li id="high-score-1">
+            <label class="name"></label>
+            <label></label>
+          </li>
+
+          <li id="high-score-2"></label>
+            <label class="name">
+            <label></label>
+          </li>
+
+          <li id="high-score-3"></label>
+            <label class="name">
+            <label></label>
+          </li>
+
+          <li id="high-score-4"></label>
+            <label class="name">
+            <label></label>
+          </li>
+
+          <li id="high-score-5"></label>
+            <label class="name">
+            <label></label>
+          </li>
+        </ul>
+      </div>
+      <button id="return-home-btn">Return Home</button>
+    </div>
+
+  <script src="./assets/script.js"></script>
+  </body>
+
+</html>
